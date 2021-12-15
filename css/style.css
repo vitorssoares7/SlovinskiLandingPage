@@ -29,8 +29,33 @@ header .logo img{
 }
 
 header nav.menu-mobile{
-    display: none;
     float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    background-image: url(../imagens/menu-mobile.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+
+header nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+}
+
+header nav.menu-mobile ul li{
+    text-transform: uppercase;
+}
+
+header nav.menu-mobile ul li{
+    padding: 10px 0;
 }
 
 header nav.menu-desktop{
@@ -49,7 +74,7 @@ header nav.menu-desktop ul li{
     text-transform: uppercase;
 }
 
-header nav.menu-desktop ul li a{
+header ul a{
     color: #b4b4b4;
     text-decoration: none;
 }
@@ -162,6 +187,16 @@ section.perfil .texto-perfil p{
     margin-top: 8px;
 }
 
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3%*0.6);
+}
+
 @media screen and (max-width: 768px){
     header nav.menu-desktop{
         display: none;
@@ -193,7 +228,13 @@ section.perfil .texto-perfil p{
         padding: 30px 2%;
     }
 
+    section.perfil .perfil-wraper{
+        padding-top: 0;
+    }
+
     section.perfil .perfil-wraper2{
+        height: auto;
+        position: static;
         display: inline-block;
         text-align: center;
     }
