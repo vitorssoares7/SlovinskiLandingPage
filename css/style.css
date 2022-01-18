@@ -51,6 +51,7 @@ header nav.menu-mobile ul{
 }
 
 header nav.menu-mobile ul li{
+    font-size: 12px;
     text-transform: uppercase;
 }
 
